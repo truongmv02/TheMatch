@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d5ea91a6cf7f04e86ce9bb364ea183, type: 3}
+  m_Name: Bow_2
+  m_EditorClassIdentifier: 
+  <Icon>k__BackingField: {fileID: -651496570, guid: b091a5091fd874942b9cebb3ec58c48b, type: 3}
+  <Name>k__BackingField: Bow 2
+  <Description>k__BackingField: Bow 2 Description
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: c71c6a531087d2c41a1a716205393ef6, type: 2}
+  <NumberOfAttack>k__BackingField: 1
+  <ComponentDatas>k__BackingField:
+  - rid: 7472691480009637888
+  - rid: 7472691480009637889
+  - rid: 7472691480009637890
+  - rid: 7472691480009637891
+  - rid: 7472691480009637892
+  - rid: 7472691480009637893
+  - rid: 7472691480009637894
+  - rid: 7472691480009637895
+  - rid: 7472691480009637896
+  - rid: 1697147198833950723
+  references:
+    version: 2
+    RefIds:
+    - rid: 1697147198833950723
+      type: {class: WeaponSoundData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: WeaponSoundData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <AttackSounds>k__BackingField:
+          - <Phase>k__BackingField: 0
+            <Clip>k__BackingField: {fileID: 8300000, guid: 39cf768975e62b14d9de433e6b5bc3a4, type: 3}
+          - <Phase>k__BackingField: 2
+            <Clip>k__BackingField: {fileID: 8300000, guid: 7e9282e793ea431419006797bcf8ee64, type: 3}
+    - rid: 7472691480009637888
+      type: {class: WeaponSpriteData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: WeaponSpriteData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <PhaseSprites>k__BackingField:
+          - <Phase>k__BackingField: 0
+            <Sprites>k__BackingField:
+            - {fileID: -395181506, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+            - {fileID: -2084313591, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+          - <Phase>k__BackingField: 1
+            <Sprites>k__BackingField:
+            - {fileID: -2084313591, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+          - <Phase>k__BackingField: 2
+            <Sprites>k__BackingField:
+            - {fileID: -1169798274, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+            - {fileID: 1909563960, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+            - {fileID: -1109354504, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+            - {fileID: 137373459, guid: 423cd251faacf0a4c969f95997221eb8, type: 3}
+    - rid: 7472691480009637889
+      type: {class: InputHoldData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: InputHoldData
+    - rid: 7472691480009637890
+      type: {class: ProjectileSpawnerData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: ProjectileSpawnerData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <SpawnInfos>k__BackingField:
+          - <Offset>k__BackingField: {x: 1.24, y: 0.2}
+            <Direction>k__BackingField: {x: 1, y: 0}
+            <projectilePrefab>k__BackingField: {fileID: 855927184457128932, guid: 755bfb630df924f478d736d56f522df5, type: 3}
+            <DamageData>k__BackingField:
+              <Amount>k__BackingField: 15
+            <KnockBackData>k__BackingField:
+              Strength: 10
+              Angle: {x: 1, y: 1}
+            <PoiseDamageData>k__BackingField:
+              <Amount>k__BackingField: 0
+            <SpriteDataPackage>k__BackingField:
+              <Sprite>k__BackingField: {fileID: -782052309, guid: 98d76218407d4b44c931b8d8a84f6736, type: 3}
+    - rid: 7472691480009637891
+      type: {class: MovementData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: MovementData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <Direction>k__BackingField: {x: 0, y: 0}
+          <Velocity>k__BackingField: 0
+    - rid: 7472691480009637892
+      type: {class: OptionalSpriteData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: OptionalSpriteData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <UseOptionalSprite>k__BackingField: 1
+          <Sprite>k__BackingField: {fileID: -782052309, guid: 98d76218407d4b44c931b8d8a84f6736, type: 3}
+    - rid: 7472691480009637893
+      type: {class: DrawData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: DrawData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <DrawCurve>k__BackingField:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 2
+              outSlope: 2
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          <DrawTime>k__BackingField: 0.2666667
+    - rid: 7472691480009637894
+      type: {class: DrawToProjectileData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: DrawToProjectileData
+    - rid: 7472691480009637895
+      type: {class: ChargeData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: ChargeData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <ChargeTime>k__BackingField: 1
+          <InitialChargeAmount>k__BackingField: 1
+          <NumberOfCharges>k__BackingField: 2
+          <ParticleOffset>k__BackingField: {x: 0, y: 0}
+          <ChargeIncreaseIndicatorParticlePrefab>k__BackingField: {fileID: 5035475648444946363, guid: 9f8f19051e3a1f0409054d7677492c14, type: 3}
+          <FullyChargeIndicatorParticlePrefab>k__BackingField: {fileID: 5035475648444946363, guid: 9f8f19051e3a1f0409054d7677492c14, type: 3}
+    - rid: 7472691480009637896
+      type: {class: ChargeToProjectileSpawnerData, ns: Game.Weapons.Components, asm: Assembly-CSharp}
+      data:
+        name: ChargeToProjectileSpawnerData
+        repeatData: 0
+        attackData:
+        - name: Attack 1
+          <AngleVariation>k__BackingField: 3
